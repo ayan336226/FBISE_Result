@@ -12,7 +12,7 @@ form.addEventListener("submit", function (event) {
 
     // Fixed codes
     const codes = {
-        "1": "4231",
+        "1": "3057293",
         "2": "5678"
     };
 
