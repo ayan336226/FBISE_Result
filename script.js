@@ -13,7 +13,7 @@ form.addEventListener("submit", function (event) {
     // Fixed codes
     const codes = {
         "1": "3057293",
-        "2": "5678"
+        "2": "123444"
     };
 
 
@@ -35,7 +35,7 @@ form.addEventListener("submit", function (event) {
     // Code empty
     if (!code) {
 
-        message.textContent = "Please enter your verification code.";
+        message.textContent = "Please enter your Roll No.";
         message.classList.add("error");
 
         return;
@@ -51,7 +51,7 @@ form.addEventListener("submit", function (event) {
     } else {
 
         message.textContent =
-            "The verification code you entered is incorrect. Please check your code and try again.";
+            "The Roll No you entered is incorrect. Please check your Roll No and try again.";
 
         message.classList.add("error");
 
