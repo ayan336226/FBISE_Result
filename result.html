@@ -52,48 +52,54 @@
         ========================= */
 
         .result-page {
-    width: 815px;
-    min-width: 815px;
-    max-width: 815px;
+            width: 900px;
+            min-width: 900px;
+            max-width: 900px;
 
-    min-height: 770px;
+            margin: 20px auto 0 auto;
 
-    /* Top se 20px gap */
-    margin: 20px auto 0 auto;
+            background: white;
+        }
 
-    padding: 4px 14px 0 14px;
 
-    position: relative;
+        /* =========================
+           RESULT CONTENT
+        ========================= */
 
-    background: white;
-}
+        .result-content {
+            padding: 4px 2px 0 2px;
+
+            border: #75451f solid 2px;
+
+            background: rgb(241, 240, 230);
+            height: 726px;
+        }
+
 
         /* =========================
            INFORMATION TABLE
         ========================= */
 
         .info-table {
-
-            width: 100%;
-
-            border-collapse: collapse;
-
-            font-size: 17px;
-
-            border: 2px solid #a47c55;
-        }
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2px;
+    font-size: 17px;
+    border: none;
+}
 
 
         .info-table th,
         .info-table td {
 
-            border: 1px solid #a47c55;
+            border: 2px solid #b68e66;
 
             padding: 3px 5px;
 
             text-align: left;
 
             line-height: 22px;
+
         }
 
 
@@ -103,7 +109,7 @@
 
             font-weight: bold;
 
-            background: #fffaf0;
+            background: rgb(241, 240, 230);
         }
 
 
@@ -112,6 +118,11 @@
             width: 70%;
 
             font-weight: normal;
+
+            font-family: 'Franklin Gothic Medium',
+                         'Arial Narrow',
+                         Arial,
+                         sans-serif;
         }
 
 
@@ -128,17 +139,22 @@
         ========================= */
 
         .subjects-table {
+    width: 100%;
 
-            width: 100%;
+    border-collapse: separate;
+    border-spacing: 2px;
 
-            border-collapse: collapse;
+    margin-top: 0;
 
-            margin-top: 0;
+    font-size: 17px;
 
-            font-size: 17px;
+    font-family: 'Franklin Gothic Medium',
+                 'Arial Narrow',
+                 Arial,
+                 sans-serif;
 
-            border: 2px solid #a47c55;
-        }
+    border: none;
+}
 
 
         .subjects-table th,
@@ -156,7 +172,7 @@
 
         .subjects-table thead th {
 
-            background: #91410e;
+            background: #794918;
 
             color: white;
 
@@ -196,6 +212,8 @@
 
             font-size: 28px;
 
+            background: #ffffff;
+
             line-height: 35px;
 
             color: #75451f;
@@ -217,29 +235,23 @@
         ========================= */
 
         .footer {
+    width: 100%;
 
-            position: absolute;
+    border-top: 2px solid #ddd;
 
-            bottom: 0;
+    text-align: center;
 
-            left: 0;
+    margin-top: 80px;
 
-            width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
 
-            border-top: 2px solid #ddd;
+    font-size: 13px;
 
-            text-align: center;
+    font-weight: bold;
 
-            padding-top: 10px;
-
-            padding-bottom: 2px;
-
-            font-size: 13px;
-
-            font-weight: bold;
-
-            color: #79522f;
-        }
+    color: #79522f;
+}
 
 
         /* =========================
@@ -260,11 +272,15 @@
             .result-page {
 
                 margin-left: 0;
+
                 margin-right: 0;
 
                 /* Same fixed size */
+
                 width: 815px;
+
                 min-width: 815px;
+
                 max-width: 815px;
             }
         }
@@ -279,150 +295,163 @@
     <div class="result-page">
 
 
-        <!-- =========================
-             STUDENT INFORMATION
-        ========================= -->
-
-        <table class="info-table">
-
-            <tr>
-                <th>Roll No.</th>
-                <td>3056461</td>
-            </tr>
-
-            <tr>
-                <th>Registration No.</th>
-                <td>2466060390</td>
-            </tr>
-
-            <tr>
-                <th>Candidate's Name</th>
-                <td>IFZAL ILAHI</td>
-            </tr>
-
-            <tr>
-                <th>Father's Name</th>
-                <td>MUHAMMAD IQBAL</td>
-            </tr>
-
-            <tr>
-                <th>Institute</th>
-
-                <td>
-                    COLONEL MUJEEB-UR-REHMAN (SHAHEED) PUBLIC SCHOOL AND
-                    COLLEGE, JUTIAL GILGIT
-                </td>
-            </tr>
-
-            <tr>
-                <th>Result</th>
-
-                <td>
-                    <strong>PASS WITH 438 MARKS</strong>
-                </td>
-            </tr>
-
-            <tr>
-                <th>Remarks</th>
-                <td></td>
-            </tr>
-
-        </table>
+        <div class="result-content">
 
 
-        <!-- =========================
-             SUBJECTS
-        ========================= -->
+            <!-- =========================
+                 STUDENT INFORMATION
+            ========================= -->
 
-        <table class="subjects-table">
-
-            <thead>
+            <table class="info-table">
 
                 <tr>
-
-                    <th class="sr">
-                        S. #
-                    </th>
-
-                    <th>
-                        SUBJECT
-                    </th>
-
-                    <th class="marks">
-                        THEORY
-                    </th>
-
-                    <th class="marks">
-                        PRACTICAL
-                    </th>
-
+                    <th>Roll No.</th>
+                    <td>3057293</td>
                 </tr>
 
-            </thead>
-
-
-            <tbody>
+                <tr>
+                    <th>Registration No.</th>
+                    <td>2466060390</td>
+                </tr>
 
                 <tr>
-                    <td>1</td>
-                    <td>ENGLISH COMPULSORY - I</td>
-                    <td>080</td>
+                    <th>Candidate's Name</th>
+                    <td>ANSAR AHMED</td>
+                </tr>
+
+                <tr>
+                    <th>Father's Name</th>
+                    <td>MMUHAMMAD FAROOQ</td>
+                </tr>
+
+                <tr>
+                    <th>Institute</th>
+
+                    <td>
+                        COLONEL MUJEEB-UR-REHMAN (SHAHEED) PUBLIC SCHOOL AND
+                        COLLEGE, JUTIAL GILGIT
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Result</th>
+
+                    <td>
+                        <strong>PASS WITH 438 MARKS</strong>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Remarks</th>
                     <td></td>
                 </tr>
 
-                <tr>
-                    <td>2</td>
-                    <td>URDU COMPULSORY - I</td>
-                    <td>093</td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td>3</td>
-                    <td>ISLAMIC EDUCATION</td>
-                    <td>048</td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td>4</td>
-                    <td>PHYSICS - I</td>
-                    <td>077</td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td>5</td>
-                    <td>CHEMISTRY - I</td>
-                    <td>061</td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td>6</td>
-                    <td>BIOLOGY - I</td>
-                    <td>079</td>
-                    <td></td>
-                </tr>
-
-            </tbody>
-
-        </table>
+            </table>
 
 
-        <!-- =========================
-             DISCLAIMER
-        ========================= -->
+            <!-- =========================
+                 SUBJECTS
+            ========================= -->
 
-        <div class="disclaimer">
+            <table class="subjects-table">
 
-            <span>Disclaimer :</span>
+                <thead>
 
-            This result gazette is issued provisionally, errors and omission
-            excepted, as a notice only. Any entry appearing in this notification
-            does not itself confer any right or privilege on a candidate for the
-            grant of certificate which will be issued under the rules/regulations
-            on the basis of the original record of the Board's office.
+                    <tr>
+
+                        <th class="sr">
+                            S. #
+                        </th>
+
+                        <th>
+                            SUBJECT
+                        </th>
+
+                        <th class="marks">
+                            THEORY
+                        </th>
+
+                        <th class="marks">
+                            PRACTICAL
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>ENGLISH COMPULSORY - I</td>
+                        <td>080</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>URDU COMPULSORY - I</td>
+                        <td>085</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>ISLAMIC EDUCATION</td>
+                        <td>045</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>PHYSICS - I</td>
+                        <td>075</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>CHEMISTRY - I</td>
+                        <td>065</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>BIOLOGY - I</td>
+                        <td>060</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>TARJUMATUL QURAN - I</td>
+                        <td>035</td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+            <!-- =========================
+                 DISCLAIMER
+            ========================= -->
+
+            <div class="disclaimer">
+
+                <span>Disclaimer :</span>
+
+                This result gazette is issued provisionally, errors and omission
+                excepted, as a notice only. Any entry appearing in this notification
+                does not itself confer any right or privilege on a candidate for the
+                grant of certificate which will be issued under the rules/regulations
+                on the basis of the original record of the Board's office.
+
+            </div>
+
 
         </div>
 
