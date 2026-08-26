@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- IMPORTANT:
+         Zoom ko disable nahi kiya gaya.
+         Mobile par pinch zoom IN / OUT work karega. -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Result Gazette</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        /* =========================
+           BODY
+        ========================= */
+
+        html {
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+            background: white;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            color: #75451f;
+
+            /* Mobile par horizontal scrolling allow */
+            overflow-x: auto;
+
+            overflow-y: auto;
+        }
+
+
+        /* =========================
+           RESULT PAGE
+        ========================= */
+
+        .result-page {
+    width: 815px;
+    min-width: 815px;
+    max-width: 815px;
+
+    min-height: 770px;
+
+    /* Top se 20px gap */
+    margin: 20px auto 0 auto;
+
+    padding: 4px 14px 0 14px;
+
+    position: relative;
+
+    background: white;
+}
+
+        /* =========================
+           INFORMATION TABLE
+        ========================= */
+
+        .info-table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
+            font-size: 17px;
+
+            border: 2px solid #a47c55;
+        }
+
+
+        .info-table th,
+        .info-table td {
+
+            border: 1px solid #a47c55;
+
+            padding: 3px 5px;
+
+            text-align: left;
+
+            line-height: 22px;
+        }
+
+
+        .info-table th {
+
+            width: 30%;
+
+            font-weight: bold;
+
+            background: #fffaf0;
+        }
+
+
+        .info-table td {
+
+            width: 70%;
+
+            font-weight: normal;
+        }
+
+
+        /* Institute */
+
+        .info-table tr:nth-child(5) td {
+
+            line-height: 20px;
+        }
+
+
+        /* =========================
+           SUBJECT TABLE
+        ========================= */
+
+        .subjects-table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
+            margin-top: 0;
+
+            font-size: 17px;
+
+            border: 2px solid #a47c55;
+        }
+
+
+        .subjects-table th,
+        .subjects-table td {
+
+            border: 1px solid #a47c55;
+
+            padding: 3px 5px;
+
+            text-align: left;
+
+            line-height: 20px;
+        }
+
+
+        .subjects-table thead th {
+
+            background: #91410e;
+
+            color: white;
+
+            font-weight: bold;
+        }
+
+
+        .subjects-table .sr {
+
+            width: 6%;
+        }
+
+
+        .subjects-table .marks {
+
+            width: 17%;
+        }
+
+
+        .subjects-table tbody td:first-child {
+
+            text-align: center;
+        }
+
+
+        /* =========================
+           DISCLAIMER
+        ========================= */
+
+        .disclaimer {
+
+            border: 2px solid #a47c55;
+
+            margin-top: 6px;
+
+            padding: 4px 5px 8px 5px;
+
+            font-size: 28px;
+
+            line-height: 35px;
+
+            color: #75451f;
+
+            min-height: 195px;
+        }
+
+
+        .disclaimer span {
+
+            font-size: 28px;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        .footer {
+
+            position: absolute;
+
+            bottom: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            border-top: 2px solid #ddd;
+
+            text-align: center;
+
+            padding-top: 10px;
+
+            padding-bottom: 2px;
+
+            font-size: 13px;
+
+            font-weight: bold;
+
+            color: #79522f;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        /*
+           YAHAN KOI WIDTH SHRINK NAHI HOGI.
+
+           Mobile par:
+           815px ka original page rahega.
+           User horizontal scroll kar sakega.
+           Pinch zoom IN / OUT bhi karega.
+        */
+
+        @media (max-width: 815px) {
+
+            .result-page {
+
+                margin-left: 0;
+                margin-right: 0;
+
+                /* Same fixed size */
+                width: 815px;
+                min-width: 815px;
+                max-width: 815px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <div class="result-page">
+
+
+        <!-- =========================
+             STUDENT INFORMATION
+        ========================= -->
+
+        <table class="info-table">
+
+            <tr>
+                <th>Roll No.</th>
+                <td>3056461</td>
+            </tr>
+
+            <tr>
+                <th>Registration No.</th>
+                <td>2466060390</td>
+            </tr>
+
+            <tr>
+                <th>Candidate's Name</th>
+                <td>IFZAL ILAHI</td>
+            </tr>
+
+            <tr>
+                <th>Father's Name</th>
+                <td>MUHAMMAD IQBAL</td>
+            </tr>
+
+            <tr>
+                <th>Institute</th>
+
+                <td>
+                    COLONEL MUJEEB-UR-REHMAN (SHAHEED) PUBLIC SCHOOL AND
+                    COLLEGE, JUTIAL GILGIT
+                </td>
+            </tr>
+
+            <tr>
+                <th>Result</th>
+
+                <td>
+                    <strong>PASS WITH 438 MARKS</strong>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Remarks</th>
+                <td></td>
+            </tr>
+
+        </table>
+
+
+        <!-- =========================
+             SUBJECTS
+        ========================= -->
+
+        <table class="subjects-table">
+
+            <thead>
+
+                <tr>
+
+                    <th class="sr">
+                        S. #
+                    </th>
+
+                    <th>
+                        SUBJECT
+                    </th>
+
+                    <th class="marks">
+                        THEORY
+                    </th>
+
+                    <th class="marks">
+                        PRACTICAL
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+                    <td>1</td>
+                    <td>ENGLISH COMPULSORY - I</td>
+                    <td>080</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>URDU COMPULSORY - I</td>
+                    <td>093</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>ISLAMIC EDUCATION</td>
+                    <td>048</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>PHYSICS - I</td>
+                    <td>077</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>CHEMISTRY - I</td>
+                    <td>061</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>BIOLOGY - I</td>
+                    <td>079</td>
+                    <td></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <!-- =========================
+             DISCLAIMER
+        ========================= -->
+
+        <div class="disclaimer">
+
+            <span>Disclaimer :</span>
+
+            This result gazette is issued provisionally, errors and omission
+            excepted, as a notice only. Any entry appearing in this notification
+            does not itself confer any right or privilege on a candidate for the
+            grant of certificate which will be issued under the rules/regulations
+            on the basis of the original record of the Board's office.
+
+        </div>
+
+
+        <!-- =========================
+             FOOTER
+        ========================= -->
+
+        <div class="footer">
+
+            FBISE
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

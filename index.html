@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Result Verification Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="header-inner">
+
+                <div class="logo">
+                    <div class="logo-circle">FB</div>
+
+                    <div>
+                        <h2>FBISE OFFICIAL</h2>
+                        <span>Online Result Checker</span>
+                    </div>
+                </div>
+
+                <div class="header-status">
+                    <span class="status-dot"></span>
+                    
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Main -->
+        <main class="main">
+
+            <div class="verification-card">
+
+                <!-- Card Header -->
+                <div class="card-header">
+
+                    <div class="lock-icon">
+                        🔒
+                    </div>
+
+                    <div>
+                        <h1>Welcome to Result Checker</h1>
+
+                        <p>
+                            Enter your Roll no below to access your result.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Form -->
+                <form id="verificationForm">
+
+                    <!-- Option -->
+                    <div class="form-group">
+
+                        <label for="option">
+                            Year
+                        </label>
+
+                        <div class="select-wrapper">
+
+                            <select id="option" required>
+
+                                <option value="" selected disabled>
+                                    Select an option
+                                </option>
+
+                                <option value="1">
+                                    HSSC-I
+                                </option>
+
+                                <option value="2">
+                                    HSSC-II
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Code -->
+                    <div class="form-group">
+
+                        <label for="code">
+                            Roll No
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">#</span>
+
+                            <input
+                                type="text"
+                                id="code"
+                                placeholder="Enter your Roll No"
+                                autocomplete="off"
+                                maxlength="20"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Message -->
+                    <div id="message"></div>
+
+
+                    <!-- Submit -->
+                    <button type="submit" class="submit-btn">
+
+                        <span>Submit</span>
+
+                        <span class="arrow">→</span>
+
+                    </button>
+
+                </form>
+
+
+                <!-- Footer -->
+                <div class="card-footer">
+
+                    <span>🔐</span>
+
+                    Your information is securely processed.
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <!-- Bottom -->
+        <footer class="footer">
+
+            <p>
+                © 2026 FBISE Result Portal. All rights reserved.
+            </p>
+
+            <div>
+                <span>Privacy</span>
+                <span>•</span>
+                <span>Terms</span>
+                <span>•</span>
+                <span>Help</span>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
